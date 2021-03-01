@@ -128,6 +128,9 @@ import { Options, Vue } from "vue-class-component";
 })
 export default class HelloWorld extends Vue {
   msg!: string;
+  mounted(): void {
+    console.log(this.$refs);
+  }
 }
 </script>
 
